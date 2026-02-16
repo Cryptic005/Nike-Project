@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>random joke</h3>
+    <button onclick="getjoke()">get joke</button>
+    <p id="23BEY10030"></p>
+</body>
+<script>
+    function getjoke(){
+fetch ("https://sv443.net/jokeapi/v2/joke/Any")
+.then (res=>res.json())
+
+.then (data => {document.getElementById("23BEY10030").innerText = data.setup})
+.catch(error => {alert("error creating the joke")})
+
+
+    }
+</script>
+</html>

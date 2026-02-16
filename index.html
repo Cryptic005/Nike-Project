@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nike Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="brand">
+      <span class="logo-text">NIKE</span>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg"
+        alt="Nike Logo"
+        class="nike-logo"
+      />
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">Kids</a></li>
+      <li><a href="#">Sale</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>JUST DO IT.</h1>
+      <p>Experience speed, comfort and power with the new Nike Air collection.</p>
+     <a href="product.html" class="shop-link">
+  <button>Shop Now</button>
+</a>
+
+    </div>
+
+    <div class="hero-image">
+      <img
+        src="https://pngimg.com/uploads/running_shoes/running_shoes_PNG5823.png"
+        alt="Nike Shoe"
+      />
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products">
+    <h2>Featured Shoes</h2>
+
+    <div class="product-grid">
+      <div class="card">
+        <img src="https://pngimg.com/uploads/running_shoes/running_shoes_PNG5807.png">
+        <h3>Nike Air Max</h3>
+        <p>₹15,995</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="https://pngimg.com/uploads/running_shoes/running_shoes_PNG5816.png">
+        <h3>Nike Revolution</h3>
+        <p>13,495</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="https://pngimg.com/uploads/running_shoes/running_shoes_PNG5820.png">
+        <h3>Nike ZoomX</h3>
+        <p>₹19,995</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+<script>
+fetch ("https://sv443.net/jokeapi/v2/joke/Any")
+.then (res=>res.json())
+
+.then (data => {console.log(data.setup)})
+.catch(error => {console.log(error)}) 
+
+</script>
+</html>
+
+
+
+
+
